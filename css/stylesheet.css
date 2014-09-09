@@ -1,0 +1,447 @@
+.header {
+  height: 100px;
+}
+
+.tableHeader {
+  height: 100px;
+  clear: both;
+}
+
+.page {
+  padding: 5px 0px 5px 10%;
+}
+
+#breadcrumbs {
+  padding: 10px 10px 10px 0px;
+}
+
+h2 {
+  color: #506680;
+  font-family: Oswald, Helvetica, Arial,inherit;
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  vertical-align: baseline;
+  display: block;
+  zoom: 1;
+}
+
+.content {
+  padding-right: 50%;
+  padding-top: 10px;
+}
+
+.Mcounty {
+  stroke:grey;
+  stroke-width: 0.5px;
+  fill-opacity: 1;
+  z-index: 2;
+}
+
+.Mcity {
+  stroke:grey;
+  stroke-width: 0.5px;
+  fill-opacity: 1;
+  z-index: 2;
+}
+
+.previousCountyName {
+  background: white;
+  }
+
+.previousCityName {
+  background: white;
+  }
+
+#CountyName {
+  margin-bottom: 20px;
+}
+
+#CityName {
+  margin-bottom: 20px;
+}
+
+div.mapTooltip {
+  position: absolute;
+  text-align: center;
+  color: white;
+  height: 25px;
+  padding: 2px 10px 2px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  background: #444;
+  border: 3px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+div.pieTooltip {
+  position: absolute;
+  text-align: center;
+  color: #444;
+  height: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  pointer-events: none;
+}
+
+path.geo:hover {
+  fill-opacity: 0.5;
+  cursor: pointer;
+}
+
+circle.geo:hover {
+  fill-opacity: 0.9;
+  cursor: pointer;
+}
+
+path.chart:hover {
+  fill-opacity: 0.8;
+  cursor: pointer;
+}
+
+.Mcounty.selected {
+    fill-opacity: 0.3;
+    stroke-width: 0px;
+    z-index: 1;
+}
+
+.Mcity.selected {
+    fill-opacity: 0.3;
+    stroke-width: 0px;
+    z-index: 1;
+}
+
+form {
+width: 100%;
+position: left;
+right: 10px;
+top: 10px;
+padding: 0px 20px 20px 0px;
+cursor: pointer;
+}
+
+.mapScale {
+  cursor: pointer;
+}
+
+.mapScale label {
+  padding-right: 20px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.legend rect {
+position: right;
+fill:white;
+stroke: #444;
+stroke-width: 0.5px;
+opacity:0.8;}
+
+.legend circle {
+  fill: none;
+  stroke: #ccc;
+}
+
+.legend text {
+  fill: #444;
+  font: 10px sans-serif;
+}
+
+.ca {
+  width: 500px;
+  height: 500px;
+  float: left;
+  clear:left;
+}
+
+.pie {
+  width: 50%;
+  float: right;
+}
+
+.pieChart {
+  width: 100%;
+  height: 45%;
+  position: relative;
+}
+
+label {
+  float: left;
+}
+
+.tableHeader rect{
+  fill: #444;
+}
+
+.tableHeader text{
+  fill: white;
+  font-size: 10px;
+  font-family: Helvetica, Arial,inherit;
+  text-anchor: middle;
+  font-weight: bold;
+  padding: 10px;
+}
+
+g .tableHeaderSelected {
+  fill: lightGray;
+}
+
+#countyHeaders {
+  float: left;
+}
+
+#cityHeaders {
+  float: left;
+}
+
+.rowsGrp {
+  clear: both;
+}
+
+.Tcounty {
+  fill: white;
+}
+
+.Tcounty:hover{
+  opacity: 0.5;
+  cursor: pointer;
+  padding: -10px;
+}
+
+.Tcounty text{
+  font-size: 10px;
+  fill: #444;
+  font-family: Helvetica, Arial,inherit;
+  text-anchor: middle;
+}
+
+.Tcounty.selected g {
+    background: red;
+    background-opacity: 1;
+}
+
+.Tcounty.selected g text {
+    font-weight: bold;
+    opacity: 1;
+    font-size: 14px;
+    color: red;
+}
+
+#countyTabs {
+  clear: both;
+  float: left;
+}
+
+#countyTable{
+overflow: scroll;
+height: 500px;
+float: left;
+width: 463px;
+clear: both;
+border: 1px dotted lightGray;
+}
+
+#countyRow {
+display: block;
+width: 95%;
+height: 1217px;
+float: right;
+border-left: 1px dotted lightGray;
+}
+
+#countyIndex {
+  float: left;
+  width: 20px;
+  height: 1217px;
+  font-size: 10px;
+  fill: #444;
+  font-family: Helvetica, Arial,inherit;
+  text-anchor: middle;
+}
+
+#countyPies {
+  float:right
+}
+
+#cityTabs {
+  clear: both;
+  float: left;
+}
+
+.Tcity {
+  fill: white;
+}
+
+.Tcity:hover{
+  opacity: 0.5;
+  cursor: pointer;
+  padding: -10px;
+}
+
+.Tcity text{
+  font-size: 10px;
+  fill: #444;
+  font-family: Helvetica, Arial,inherit;
+  text-anchor: middle;
+}
+
+.Tcity.selected g {
+    background: red;
+    background-opacity: 1;
+}
+
+.Tcity.selected g text {
+    font-weight: bold;
+    opacity: 1;
+    font-size: 14px;
+    color: red;
+}
+
+#cityTable{
+overflow: scroll;
+height: 500px;
+float: left;
+width: 463px;
+clear: both;
+border: 1px dotted lightGray;
+}
+
+#cityRow {
+display: block;
+width: 95%;
+height: 1050px;
+float: right;
+border-left: 1px dotted lightGray;
+}
+
+#cityIndex {
+  float: left;
+  width: 20px;
+  height: 1050px;
+  font-size: 10px;
+  fill: #444;
+  font-family: Helvetica, Arial,inherit;
+  text-anchor: middle;
+}
+
+#cityPies {
+  float:right
+}
+
+.hide{
+    display: none;
+  }
+
+#countyNav {
+  float: left;
+  width: 150px;
+}
+
+#cityNav {
+  float: left;
+  width: 150px;
+}
+
+.switch {
+  position: relative;
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 75px;
+  line-height: 22px;
+  font-size: 12px;
+  font-family: font-family: Helvetica, Arial,inherit;
+  color: #444;
+  text-align: center;
+  cursor: pointer;
+}
+
+.countyDiv1 {
+  display: none;
+}
+
+.countyDiv1:checked + .switch-label {
+  font-weight: bold;
+  transition: 0.15s ease-out;
+  color: rgb(255, 255, 255);
+}
+
+.countyDiv1:checked + .switch-label-on ~ .switch-selection {
+  left: 75px;
+}
+
+.countyDiv2 {
+  display: none;
+}
+
+.countyDiv2:checked + .switch-label-on ~ .switch-selection {
+  left: 72px;
+}
+
+.countyDiv2:checked + .switch-label {
+  font-weight: bold;
+  transition: 0.15s ease-out;
+  color: rgb(255, 255, 255);
+}
+
+.cityDiv1 {
+  display: none;
+}
+
+.cityDiv1:checked + .switch-label {
+  font-weight: bold;
+  transition: 0.15s ease-out;
+  color: rgb(255, 255, 255);
+}
+
+.cityDiv1:checked + .switch-label-on ~ .switch-selection {
+  left: 75px;
+}
+
+.cityDiv2 {
+  display: none;
+}
+
+.cityDiv2:checked + .switch-label-on ~ .switch-selection {
+  left: 72px;
+}
+
+.cityDiv2:checked + .switch-label {
+  font-weight: bold;
+  transition: 0.15s ease-out;
+  color: rgb(255, 255, 255);
+}
+
+.switch-selection {
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  display: block;
+  width: 72px;
+  height: 18px;
+  border-radius: 3px;
+  transition: left 0.15s ease-out;
+}
+.switch-blue .switch-selection {
+  background-color: #444;
+}
+
+input[name="dataset"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    -ms-appearance: checkbox;
+    -o-appearance: checkbox;
+}
+
+.bubble {
+  fill-opacity: .5;
+  stroke-width: .5px;
+}
