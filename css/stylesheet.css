@@ -267,7 +267,7 @@ border-left: 1px dotted lightGray;
 
 #countyPies {
   float:left
-  margin-left: 40 px;
+  margin-left: 5%;
 }
 
 #cityTabs {
@@ -327,7 +327,7 @@ border-left: 1px dotted lightGray;
 
 #cityPies {
   float:left
-  margin-left: 40 px;
+  margin-left: 5%;
 }
 
 .hide{
