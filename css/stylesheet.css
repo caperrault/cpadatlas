@@ -28,7 +28,8 @@ h2 {
 }
 
 .content {
-  padding-right: 50%;
+  /*padding-right: 50%;*/
+  width: 500px;
   padding-top: 10px;
 }
 
@@ -39,12 +40,27 @@ h2 {
   z-index: 2;
 }
 
-.Mcity {
-  stroke:grey;
-  stroke-width: 0.5px;
-  fill-opacity: 1;
-  z-index: 2;
+.Mcounty.selectedCounty {
+    fill-opacity: 0.3;
+    stroke-width: 0px;
+    z-index: 1;
 }
+
+.Mcity {
+fill-opacity: .5;
+stroke-width: .5px;
+}
+
+.Mcity.selectedCity {
+    fill-opacity: 1;
+    stroke-width: 1px;
+    stroke: red;
+}
+
+/*.bubble {
+  fill-opacity: .5;
+  stroke-width: .5px;
+}*/
 
 .previousCountyName {
   background: white;
@@ -100,18 +116,6 @@ circle.geo:hover {
 path.chart:hover {
   fill-opacity: 0.8;
   cursor: pointer;
-}
-
-.Mcounty.selected {
-    fill-opacity: 0.3;
-    stroke-width: 0px;
-    z-index: 1;
-}
-
-.Mcity.selected {
-    fill-opacity: 0.3;
-    stroke-width: 0px;
-    z-index: 1;
 }
 
 form {
@@ -186,7 +190,11 @@ label {
   padding: 10px;
 }
 
-g .tableHeaderSelected {
+g .countyTableHeaderSelected {
+  fill: lightGray;
+}
+
+g .cityTableHeaderSelected {
   fill: lightGray;
 }
 
@@ -219,16 +227,10 @@ g .tableHeaderSelected {
   text-anchor: middle;
 }
 
-.Tcounty.selected g {
-    background: red;
-    background-opacity: 1;
-}
-
-.Tcounty.selected g text {
+.Tcounty.selectedCounty g text {
     font-weight: bold;
     opacity: 1;
     font-size: 14px;
-    color: red;
 }
 
 #countyTabs {
@@ -264,7 +266,8 @@ border-left: 1px dotted lightGray;
 }
 
 #countyPies {
-  float:right
+  float:left
+  margin-left: 40 px;
 }
 
 #cityTabs {
@@ -289,16 +292,10 @@ border-left: 1px dotted lightGray;
   text-anchor: middle;
 }
 
-.Tcity.selected g {
-    background: red;
-    background-opacity: 1;
-}
-
-.Tcity.selected g text {
+.Tcity.selectedCity g text {
     font-weight: bold;
     opacity: 1;
     font-size: 14px;
-    color: red;
 }
 
 #cityTable{
@@ -329,7 +326,8 @@ border-left: 1px dotted lightGray;
 }
 
 #cityPies {
-  float:right
+  float:left
+  margin-left: 40 px;
 }
 
 .hide{
@@ -439,9 +437,4 @@ input[name="dataset"] {
     -moz-appearance: checkbox;
     -ms-appearance: checkbox;
     -o-appearance: checkbox;
-}
-
-.bubble {
-  fill-opacity: .5;
-  stroke-width: .5px;
 }

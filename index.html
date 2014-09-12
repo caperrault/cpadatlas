@@ -40,6 +40,7 @@
     <script src="js/cityPie1.js"></script>
     <script src="js/cityPie2.js"></script>
     <script src="js/cityInfo.js"></script>
+    <script src="d3.geo.zoom.js"></script>
 
   </head>
 
@@ -243,8 +244,8 @@
                     .on("click", function (d, i) {
                       selectedTableHeader = i;
                       if (i>=0) {
-                      d3.select(".tableHeaderSelected").classed("tableHeaderSelected", false);
-                      d3.select(this).classed("tableHeaderSelected", true);
+                      d3.select(".countyTableHeaderSelected").classed("countyTableHeaderSelected", false);
+                      d3.select(this).classed("countyTableHeaderSelected", true);
                       return refreshTable(d);
                       }
                     });
@@ -263,8 +264,8 @@
                     .on("click", function(d) {
                                             selectedCounty = d.County;
                                             countyClass(d.County);
-                                            updatePie1(d.County);
-                                            updatePie2(d.County);
+                                            updateCountyPie1(d.County);
+                                            updateCountyPie2(d.County);
                                             updateCountyName(d.County);
                                             updateCountyTot(d3.format(",")(d["Total CPAD Acreage"]));
                                             updateCountyInh(d3.format(",")(d["CPAD Acres per 1,000 Inh."]));
@@ -320,8 +321,8 @@
 
             });
 
-                var updatePie1;
-                var updatePie2;
+                var updateCountyPie1;
+                var updateCountyPie2;
                 var updateCountyName;
                 var updateCountyTot;
                 var updateCountyInh;
@@ -533,8 +534,8 @@
                 .on("click", function (d, i) {
                   selectedTableHeader = i;
                   if (i>=0) {
-                  d3.select(".tableHeaderSelected").classed("tableHeaderSelected", false);
-                  d3.select(this).classed("tableHeaderSelected", true);
+                  d3.select(".cityTableHeaderSelected").classed("cityTableHeaderSelected", false);
+                  d3.select(this).classed("cityTableHeaderSelected", true);
                   return refreshTable(d);
                   }
                 });

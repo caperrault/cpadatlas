@@ -106,7 +106,7 @@ d3.csv("Agency_lev_allcounties_perc.csv", function (dataset) {
                    path.transition().duration(750).attrTween("d", arcTween);
                  };
 
-                 updatePie2 = setValue;
+                 updateCountyPie2 = setValue;
 
                  function arcTween(a) {
                    var i = d3.interpolate(this._current, a);

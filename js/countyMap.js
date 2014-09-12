@@ -1,13 +1,13 @@
 var selectedCounty;
 
 function countyClass(name) {
-  d3.select(".selected").classed("selected", false);
+  d3.select(".selectedCounty").classed("selectedCounty", false);
   selectedCounty = name;
   d3.selectAll(".Mcounty")
-    .classed("selected", function(d) {return d.properties.name == name;})
+    .classed("selectedCounty", function(d) {return d.properties.name == name;})
     .transition().duration(300);
   d3.selectAll(".Tcounty")
-    .classed("selected", function(d) {return d.County == name;})
+    .classed("selectedCounty", function(d) {return d.County == name;})
     .transition().duration(300);
 }
 
@@ -128,8 +128,8 @@ else if (document.getElementById("POP_NORMCounty").checked) {
             .on("click", function(d) {
             selectedCounty = d.properties.name;
             countyClass(d.properties.name);
-            updatePie1(d.properties.name);
-            updatePie2(d.properties.name);
+            updateCountyPie1(d.properties.name);
+            updateCountyPie2(d.properties.name);
             updateCountyName(d.properties.name);
             updateCountyTot(d3.format(",")(d.properties.ac_tot));
             updateCountyInh(d3.format(",")(d.properties.POP_NORM));

@@ -107,7 +107,7 @@ d3.csv("Access_type_allcounties_perc.csv", function (dataset) {
             path.transition().duration(750).attrTween("d", arcTween);
           }
 
-          updatePie1 = setValue;
+          updateCountyPie1 = setValue;
 
           function arcTween(a) {
             var i = d3.interpolate(this._current, a);
