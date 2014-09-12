@@ -163,8 +163,9 @@ opacity:0.8;}
 }
 
 .pie {
-  width: 50%;
-  float: right;
+  width: 500px;;
+  float: left;
+  margin-left: 70px;
 }
 
 .pieChart {
@@ -267,7 +268,6 @@ border-left: 1px dotted lightGray;
 
 #countyPies {
   float:left
-  margin-left: 5%;
 }
 
 #cityTabs {
@@ -327,7 +327,6 @@ border-left: 1px dotted lightGray;
 
 #cityPies {
   float:left
-  margin-left: 5%;
 }
 
 .hide{
