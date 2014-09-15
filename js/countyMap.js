@@ -3,7 +3,7 @@ var selectedCounty;
 function countyClass(name) {
   d3.select(".selectedCounty").classed("selectedCounty", false);
   selectedCounty = name;
-  d3.selectAll(".Mcounty")
+  d3.selectAll(".McountyOverlay")
     .classed("selectedCounty", function(d) {return d.properties.name == name;})
     .transition().duration(300);
   d3.selectAll(".Tcounty")
@@ -111,14 +111,18 @@ else if (document.getElementById("POP_NORMCounty").checked) {
         counties.transition().duration(250)
              .style("fill", function (d) {return colorPOP(d.properties.POP_NORM);});
         svg.transition().duration(300).style("display", null);
+        d3.selectAll(".selectedCounty").style("fill", "#EF8B6C");
              }
            });
 
   var counties = group.append("path")
             .attr("d",path)
-            .attr("class", "Mcounty")
-            .classed("geo", true)
-            .style("fill", "LightGray")
+            .attr("class", "Mcounty");
+
+  var countiesOverlay = group.append("path")
+            .attr("d",path)
+            .classed("geoOverlay", true)
+            .classed("McountyOverlay", true)
             .on("mouseover", function(d) {
             div.transition().duration(300).style("opacity", 1);
             div.text(d.properties.name+" County")
@@ -133,6 +137,6 @@ else if (document.getElementById("POP_NORMCounty").checked) {
             updateCountyName(d.properties.name);
             updateCountyTot(d3.format(",")(d.properties.ac_tot));
             updateCountyInh(d3.format(",")(d.properties.POP_NORM));
-        });
+          });
 
 });

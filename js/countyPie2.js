@@ -1,4 +1,4 @@
-d3.csv("Agency_lev_allcounties_perc.csv", function (dataset) {
+d3.csv("Agency_lev_allcounties_perc5.csv", function (dataset) {
 
                var width = 215,
                    height = 300,
@@ -13,7 +13,13 @@ d3.csv("Agency_lev_allcounties_perc.csv", function (dataset) {
                    endAngle: 0
                  };
 
-               var color = d3.scale.category20();
+              /* var color = d3.scale.ordinal()
+                                   .range(["#31a354", "#a1d99b", "#008F85", "#00B6A9","#88419d", "#fd8d3c", "#F05522", "#E0E0E0"])
+                                   .domain(d3.range(0,8));*/
+
+               var color = d3.scale.ordinal()
+                                   .range(["#2171b5", "#6baed6", "#008F85", "#00A99D","#88419d", "#fd8d3c", "#993404", "#E0E0E0"])
+                                   .domain(d3.range(0,8));
 
                var svg = d3.select("#countyPie2").append("svg")
                            .attr("width", width)
@@ -64,14 +70,14 @@ d3.csv("Agency_lev_allcounties_perc.csv", function (dataset) {
                 .style("display", "none");
 
                 legend.append("rect")
-                .attr("y", Math.min(width, height) / 2 - 35)
+                .attr("y", Math.min(width, height) / 2 -53)
                 .attr("width", 18)
                 .attr("height", 18)
                 .style("fill", color);
 
                 legend.append("text")
                 .attr("x", 24)
-                .attr("y", Math.min(width, height) / 2 - 26)
+                .attr("y", Math.min(width, height) / 2 -44)
                 .attr("dy", ".35em")
                 .attr("fill", "black")
                 .attr("font-size", "10px")
@@ -80,7 +86,7 @@ d3.csv("Agency_lev_allcounties_perc.csv", function (dataset) {
 
                 var titlePie2 = d3.select("#countyPie2").append("svg")
                                   .attr("x", 220)
-                                  .attr("y", Math.min(width, height) / 2 - 60)
+                                  .attr("y", Math.min(width, height) / 2 -78)
                                   .style("display", "none");
 
                   titlePie2.append("text")

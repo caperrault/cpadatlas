@@ -13,8 +13,13 @@ d3.csv("Access_type_allcounties_perc.csv", function (dataset) {
               endAngle: 0
             };
 
-          var color = d3.scale.ordinal()
+          /*var color = d3.scale.ordinal()
                               .range(["#FFC8B7", "#EF8B6C", "#F05522", "#E0E0E0"])
+                              .domain(d3.range(0,4));*/
+
+          /*Alternative color scale with green*/
+          var color = d3.scale.ordinal()
+                              .range(["#74c476", "#a1d99b", "#F05522", "#E0E0E0"])
                               .domain(d3.range(0,4));
 
           var svg = d3.select("#countyPie1").append("svg")
@@ -65,14 +70,14 @@ d3.csv("Access_type_allcounties_perc.csv", function (dataset) {
           .style("display", "none");
 
           legend.append("rect")
-          .attr("y", Math.min(width, height) / 2 - 30)
+          .attr("y", Math.min(width, height) / 2 - 53)
           .attr("width", 18)
           .attr("height", 18)
           .style("fill", color);
 
           legend.append("text")
           .attr("x", 24)
-          .attr("y", Math.min(width, height) / 2 - 21)
+          .attr("y", Math.min(width, height) / 2 - 44)
           .attr("dy", ".35em")
           .attr("fill", "black")
           .attr("font-size", "10px")
@@ -81,7 +86,7 @@ d3.csv("Access_type_allcounties_perc.csv", function (dataset) {
 
           var titlePie1 = d3.select("#countyPie1").append("svg")
                             .attr("x", 220)
-                            .attr("y", Math.min(width, height) / 2 - 55)
+                            .attr("y", Math.min(width, height) / 2 - 78)
                             .style("display", "none");
 
             titlePie1.append("text")

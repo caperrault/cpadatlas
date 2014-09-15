@@ -46,19 +46,17 @@ d3.json("CPAD_percity.json", function(err, ca) {
       .style("stroke-width", 0.5);
 
   var cities = svg.append("g")
-    //  .attr("class", "bubble")
       .selectAll("circle")
       .attr("d", d3.geo.path().projection(projection))
       .data(topojson.feature(ca, ca.objects.CPAD_cities).features)
-      .sort(function(a, b) { return b.properties.ac_tot - a.properties.ac_tot; })
       .enter()
       .append("circle")
       .attr("class", "geo")
-      .classed("Mcity", true)
       .attr("transform", function(d) { return "translate(" + cityPoints.centroid(d) + ")"; })
       .attr("r", 4)
       .style("fill", "black")
       .style("opacity", 0.6)
+      .classed("Mcity", true)
       .on("mouseover", function(d) {
       div.transition().duration(300).style("opacity", 1);
       div.text(d.properties.Name)
@@ -73,19 +71,29 @@ d3.json("CPAD_percity.json", function(err, ca) {
       updateCityName(d.properties.Name);
       updateCityTot(d3.format(",")(d.properties.ac_tot));
       updateCityInh(d3.format(",")(d.properties.POP_NORM));
-  });
+      });
 
   /*var zoom = d3.geo.zoom()
   .projection(projection)
-  .scaleExtent([projection.scale() * 1, projection.scale() * 4])
+  .scaleExtent([projection.scale(), projection.scale() * 4])
   .on("zoom.redraw", function() {
     d3.event.sourceEvent.preventDefault();
     svg.selectAll("path").attr("d", d3.geo.path().projection(projection));
     svg.selectAll(".Mcity")
     .attr("transform", function(d) { return "translate(" + cityPoints.centroid(d) + ")"; })
-
   });
   d3.selectAll("path").call(zoom);*/
+
+  /*function center() {
+       var theGraph = d3.select("#cityMapSvg");
+       zoom.translate([0, 0]);
+       zoom.scale(1);
+       theGraph.transition()
+           .duration(750)
+           .attr("transform", "translate(0, 0)scale(1)");
+   }*/
+
+  /*d3.select("#UI").append("button").attr("type","button").on("click",center).html("Center");*/
 
   var legendTot = d3.select("#cityMapSvg")
       .append("g")
@@ -134,9 +142,9 @@ d3.json("CPAD_percity.json", function(err, ca) {
 d3.selectAll(".radioCity").on("change", function(){
 
   if (document.getElementById("ac_totCity").checked) {
-        cities.transition().duration(250)
+        cities.sort(function(a, b) { return b.properties.ac_tot - a.properties.ac_tot; })
+             .transition().duration(250)
              .style("fill", "#239743")
-            // .style("stroke", "#239743")
              .style("opacity", 0.8)
              .attr("r", function (d) { return radius(d.properties.ac_tot)*2});
 
@@ -145,9 +153,9 @@ d3.selectAll(".radioCity").on("change", function(){
              }
 
   else if (document.getElementById("POP_NORMCity").checked) {
-        cities.transition().duration(250)
+        cities.sort(function(a, b) { return b.properties.POP_NORM - a.properties.POP_NORM; })
+             .transition().duration(250)
              .style("fill", "#239743")
-          //   .style("stroke", "#239743")
              .style("opacity", 0.8)
              .attr("r", function (d) { return radius(d.properties.POP_NORM)*8});
 
