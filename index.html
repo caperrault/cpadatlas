@@ -40,7 +40,7 @@
     <script src="js/cityPie1.js"></script>
     <script src="js/cityPie2.js"></script>
     <script src="js/cityInfo.js"></script>
-    <script src="d3.geo.zoom.js"></script>
+    <script src="js/d3.geo.zoom.js"></script>
 
   </head>
 
@@ -106,10 +106,23 @@
               <p class="breadcrumbs"><a href="http://www.calands.org/">Home</a> > <a href="http://www.calands.org/data">Data</a> > <a href="http://localhost:8000/">CPAD Atlas</a></p>
           </div>
 
-		      <h2 style="padding-top:0;">CPAD Atlas</h2>
+		      <h2 style="padding-top:0;">CPAD Atlas - Beta</h2>
 
-          <div class="content">
-            <p>CPAD contains data about California lands protected for open space purposes and owned in fee by agencies and organizations. More than <strong>49,000,000 acres</strong> of protected land are now inventoried in CPAD. The land is owned by more than <strong>900 government agencies, non-profit and other organizations</strong>, for the CPAD 2014a (February 2014) release.</p>
+          <div class="content" id="intro">
+            <p>
+              Use the new <strong>CPAD Atlas</strong> to visualize protected areas data statewide, by county or by selected cities - click on counties or cities to see details for those areas.
+              <br>
+              <br>
+              CPAD's 49 million acres of land are distributed in different ways for each of the state's 58 counties and 500 cities - some counties are almost completely CPAD lands while others have very little such land, and comparing to population provides another view.
+            </p>
+            <div id="imageLegendContainer">
+              <p id="imageLegend">
+              <span style="font-size:12px"> <em>Click the maps and tables below to get facts and figures about CPAD areas as shown on this image</em> <span style="font-size:9px">&#x25b6 </span></span>
+              </p>
+            </div>
+          </div>
+          <div id="tutorial">
+            <img src="CPADAtlasIllustration350px.jpg">
           </div>
 
           <h3>CPAD Data per County</h3>
@@ -117,7 +130,7 @@
           <div id="countyChapter">
 
             <div class="content">
-              <p>California counties are not equally endowed in protected areas. The interactive visualization below show the distribution of protected areas throughout the 58 counties, either in terms of <strong>total acreage</strong> or <strong>acreage per inhabitant</strong>. <strong>Click on any county on the map or in the table</strong> to take a deeper look into its protected areas.</p>
+              <p>Click any county.</p>
             </div>
 
             <form id="countyNav" class="switch switch-blue">
@@ -136,7 +149,7 @@
 
               <div>
                 <form class="mapScale">
-                  <label><input type="Radio" name="dataset" id="ac_totCounty" class="radioCounty" value="ac_tot"> Total CPAD Acreage</label>
+                  <label><input type="Radio" name="dataset" id="ac_totCounty" class="radioCounty" value="ac_tot" checked> Total CPAD Acreage</label>
                   <label><input type="Radio" name="dataset" id="POP_NORMCounty" class="radioCounty" value="POP_NORM"> CPAD Acres per Inhabitant</label>
                 </form>
               </div>
@@ -159,7 +172,7 @@
 
                 <script>
 
-                d3.json("Counties_stats_3col.json", function(data) {
+                d3.json("Counties_statsCorrected2.json", function(data) {
 
                 var selectedTableHeader;
 
@@ -291,7 +304,7 @@
                     .attr("y", fieldHeight / 2)
                     .attr("dy", ".35em")
                     .text( function (d) { if (typeof d == "number") {
-                      return d3.format(',')(d);}
+                      return d3.format(",")(d3.round(d));}
                       else {return d;}
                       });
 
@@ -402,12 +415,12 @@
 
           </div>
 
-      <h3>CPAD Data per City</h3>
+      <h3>CPAD Data for Selected Cities</h3>
 
       <div id="cityChapter">
 
         <div class="content">
-          <p>Protected areas quantity varies a lot between California cities. The interactive visualization below show the quantity of protected areas in the 50 California cities featuring the largest CPAD area acreage, either in terms of <strong>total acreage</strong> or <strong>acreage per inhabitant</strong>. <strong>Click on any city on the map or in the table</strong> to take a deeper look into its protected areas.</p>
+          <p>Click any of the 50 cities with the most CPAD acres, or most acres per person.</p>
         </div>
 
         <form id="cityNav" class="switch switch-blue">

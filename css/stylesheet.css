@@ -29,11 +29,32 @@ h2 {
 
 h3 {
   margin-top: 50px;
+  clear: both;
 }
 
 .content {
   width: 500px;
   padding-top: 10px;
+}
+
+#intro {
+  float: left;
+}
+
+#tutorial {
+  margin-top: 5px;
+  padding-left: 40px;
+  float: left;
+}
+
+#imageLegend {
+  width: 250px;
+  padding-left: 300px;
+}
+
+#imageLegendContainer {
+  padding-top: 70px;
+  width: 540px;
 }
 
 .Mcounty {
