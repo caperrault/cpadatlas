@@ -11,7 +11,7 @@ function countyClass(name) {
     .transition().duration(300);
 }
 
-d3.json("caFields9.json", function(err, ca) {
+d3.json("caFields11.json", function(err, ca) {
 
   var div = d3.select("body").append("div")
   .attr("class", "mapTooltip")
@@ -25,6 +25,11 @@ d3.json("caFields9.json", function(err, ca) {
     .domain([30237, 993455, 12867928])
     .range(['rgb(255,245,96)','rgb(215,211,0)','rgb(35,132,67)'])
     .interpolate(d3.interpolateRgb);
+
+  /*var colorTOT = d3.scale.linear()
+    .domain([30237, 993455, 12867928])
+    .range(['rgb(211,211,211)','rgb(211,255,211)','rgb(35,132,67)'])
+    .interpolate(d3.interpolateRgb);*/
 
   var colorPOP = d3.scale.linear()
     .domain([0.01, 2.08, 368])
@@ -54,8 +59,8 @@ d3.json("caFields9.json", function(err, ca) {
       .attr("width", LegendW)
       .attr("height", LegendH)
       .attr("x", 0)
-      .attr("y", 420)
-      .style("display", "none");
+      .attr("y", 420);
+      //.style("display", "none");
 
   var gradient = svg.append("svg:defs")
     .append("svg:linearGradient")
@@ -117,7 +122,8 @@ else if (document.getElementById("POP_NORMCounty").checked) {
 
   var counties = group.append("path")
             .attr("d",path)
-            .attr("class", "Mcounty");
+            .attr("class", "Mcounty")
+            .style("fill", function (d) {return colorTOT(d.properties.ac_tot);});
 
   var countiesOverlay = group.append("path")
             .attr("d",path)
