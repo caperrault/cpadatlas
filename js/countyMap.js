@@ -32,7 +32,7 @@ d3.json("caFields11.json", function(err, ca) {
     .interpolate(d3.interpolateRgb);*/
 
   var colorPOP = d3.scale.linear()
-    .domain([0.01, 2.08, 368])
+    .domain([39, 7103, 393000])
     .range(['rgb(255,245,96)','rgb(205,211,0)','rgb(35,132,67)'])
     .interpolate(d3.interpolateRgb);
 
