@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 50px;
+  margin-top: 300px;
   clear: both;
 }
 
@@ -42,19 +42,10 @@ h3 {
 }
 
 #tutorial {
-  margin-top: 5px;
-  padding-left: 40px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  padding-left: 50px;
   float: left;
-}
-
-#imageLegend {
-  width: 250px;
-  padding-left: 300px;
-}
-
-#imageLegendContainer {
-  padding-top: 70px;
-  width: 540px;
 }
 
 .Mcounty {
@@ -73,7 +64,7 @@ h3 {
   opacity: 1;
   fill: #EF8B6C;
   stroke-width: 0;
-  stroke: #EF8B6C;
+  stroke: #FF7E53;
 }
 
 .Mcity {
@@ -84,7 +75,7 @@ stroke-width: .5px;
 .Mcity.selectedCity {
     fill-opacity: 1;
     stroke-width: 3px;
-    stroke: #EF8B6C;
+    stroke: #FF7E53;
 }
 
 .previousCountyName {
@@ -122,7 +113,7 @@ div.pieTooltip {
   text-align: center;
   color: #444;
   height: 25px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   background: none;
   pointer-events: none;
@@ -141,6 +132,12 @@ circle.geo:hover {
 path.chart:hover {
   fill-opacity: 0.8;
   cursor: pointer;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 1000px;
 }
 
 form {
@@ -258,7 +255,7 @@ g .cityTableHeaderSelected {
     font-weight: bold;
     opacity: 1;
     font-size: 14px;
-    fill: #EF8B6C;
+    fill: #FF7E53;
 }
 
 #countyTabs {
@@ -323,7 +320,7 @@ border-left: 1px dotted lightGray;
     font-weight: bold;
     opacity: 1;
     font-size: 14px;
-    fill: #EF8B6C;
+    fill: #FF7E53;
 }
 
 #cityTable{

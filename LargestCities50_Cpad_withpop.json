@@ -1,0 +1,302 @@
+[
+  {
+    "City":"Anaheim",
+    "Total CPAD Acreage":5108,
+    "CPAD Acres per 1,000 Inh.":15.1,
+    "City Population":337471
+  },
+  {
+    "City":"Bakersfield",
+    "Total CPAD Acreage":5841,
+    "CPAD Acres per 1,000 Inh.":16.8,
+    "City Population":347091
+  },
+  {
+    "City":"Chula Vista",
+    "Total CPAD Acreage":4776,
+    "CPAD Acres per 1,000 Inh.":19.7,
+    "City Population":242499
+  },
+  {
+    "City":"Concord",
+    "Total CPAD Acreage":1320,
+    "CPAD Acres per 1,000 Inh.":10.8,
+    "City Population":122683
+  },
+  {
+    "City":"Corona",
+    "Total CPAD Acreage":477,
+    "CPAD Acres per 1,000 Inh.":3.1,
+    "City Population":153644
+  },
+  {
+    "City":"East Los Angeles",
+    "Total CPAD Acreage":93,
+    "CPAD Acres per 1,000 Inh.":0.7,
+    "City Population":126751
+  },
+  {
+    "City":"Elk Grove",
+    "Total CPAD Acreage":1097,
+    "CPAD Acres per 1,000 Inh.":7.2,
+    "City Population":151639
+  },
+  {
+    "City":"Escondido",
+    "Total CPAD Acreage":12951,
+    "CPAD Acres per 1,000 Inh.":89.7,
+    "City Population":144311
+  },
+  {
+    "City":"Fontana",
+    "Total CPAD Acreage":1883,
+    "CPAD Acres per 1,000 Inh.":9.6,
+    "City Population":196129
+  },
+  {
+    "City":"Fremont",
+    "Total CPAD Acreage":20155,
+    "CPAD Acres per 1,000 Inh.":93.7,
+    "City Population":215188
+  },
+  {
+    "City":"Fresno",
+    "Total CPAD Acreage":2288,
+    "CPAD Acres per 1,000 Inh.":4.6,
+    "City Population":495777
+  },
+  {
+    "City":"Fullerton",
+    "Total CPAD Acreage":1082,
+    "CPAD Acres per 1,000 Inh.":8.0,
+    "City Population":135419
+  },
+  {
+    "City":"Garden Grove",
+    "Total CPAD Acreage":1592,
+    "CPAD Acres per 1,000 Inh.":9.3,
+    "City Population":171377
+  },
+  {
+    "City":"Glendale",
+    "Total CPAD Acreage":9073,
+    "CPAD Acres per 1,000 Inh.":47.1,
+    "City Population":192537
+  },
+  {
+    "City":"Hayward",
+    "Total CPAD Acreage":14365,
+    "CPAD Acres per 1,000 Inh.":99.0,
+    "City Population":145165
+  },
+  {
+    "City":"Huntington Beach",
+    "Total CPAD Acreage":2615,
+    "CPAD Acres per 1,000 Inh.":13.7,
+    "City Population":191403
+  },
+  {
+    "City":"Irvine",
+    "Total CPAD Acreage":10198,
+    "CPAD Acres per 1,000 Inh.":47.7,
+    "City Population":213880
+  },
+  {
+    "City":"Lancaster",
+    "Total CPAD Acreage":213,
+    "CPAD Acres per 1,000 Inh.":1.4,
+    "City Population":155496
+  },
+  {
+    "City":"Long Beach",
+    "Total CPAD Acreage":2083,
+    "CPAD Acres per 1,000 Inh.":4.5,
+    "City Population":463589
+  },
+  {
+    "City":"Los Angeles",
+    "Total CPAD Acreage":45409,
+    "CPAD Acres per 1,000 Inh.":11.9,
+    "City Population":3804503
+  },
+  {
+    "City":"Modesto",
+    "Total CPAD Acreage":1567,
+    "CPAD Acres per 1,000 Inh.":7.8,
+    "City Population":201986
+  },
+  {
+    "City":"Moreno Valley",
+    "Total CPAD Acreage":3678,
+    "CPAD Acres per 1,000 Inh.":19.0,
+    "City Population":193758
+  },
+  {
+    "City":"Oakland",
+    "Total CPAD Acreage":4009,
+    "CPAD Acres per 1,000 Inh.":10.2,
+    "City Population":392890
+  },
+  {
+    "City":"Oceanside",
+    "Total CPAD Acreage":3121,
+    "CPAD Acres per 1,000 Inh.":18.6,
+    "City Population":167799
+  },
+  {
+    "City":"Ontario",
+    "Total CPAD Acreage":245,
+    "CPAD Acres per 1,000 Inh.":1.5,
+    "City Population":165260
+  },
+  {
+    "City":"Orange",
+    "Total CPAD Acreage":4520,
+    "CPAD Acres per 1,000 Inh.":33.0,
+    "City Population":136891
+  },
+  {
+    "City":"Oxnard",
+    "Total CPAD Acreage":1182,
+    "CPAD Acres per 1,000 Inh.":6.0,
+    "City Population":197456
+  },
+  {
+    "City":"Palmdale",
+    "Total CPAD Acreage":4582,
+    "CPAD Acres per 1,000 Inh.":30.2,
+    "City Population":151841
+  },
+  {
+    "City":"Pasadena",
+    "Total CPAD Acreage":4760,
+    "CPAD Acres per 1,000 Inh.":34.7,
+    "City Population":137316
+  },
+  {
+    "City":"Pomona",
+    "Total CPAD Acreage":388,
+    "CPAD Acres per 1,000 Inh.":2.6,
+    "City Population":149431
+  },
+  {
+    "City":"Rancho Cucamonga",
+    "Total CPAD Acreage":408,
+    "CPAD Acres per 1,000 Inh.":2.5,
+    "City Population":165775
+  },
+  {
+    "City":"Riverside",
+    "Total CPAD Acreage":2485,
+    "CPAD Acres per 1,000 Inh.":8.1,
+    "City Population":306128
+  },
+  {
+    "City":"Roseville",
+    "Total CPAD Acreage":2444,
+    "CPAD Acres per 1,000 Inh.":20.4,
+    "City Population":119537
+  },
+  {
+    "City":"Sacramento",
+    "Total CPAD Acreage":5850,
+    "CPAD Acres per 1,000 Inh.":12.5,
+    "City Population":467467
+  },
+  {
+    "City":"Salinas",
+    "Total CPAD Acreage":601,
+    "CPAD Acres per 1,000 Inh.":4.0,
+    "City Population":150634
+  },
+  {
+    "City":"San Bernardino",
+    "Total CPAD Acreage":1518,
+    "CPAD Acres per 1,000 Inh.":7.2,
+    "City Population":210624
+  },
+  {
+    "City":"San Diego",
+    "Total CPAD Acreage":49489,
+    "CPAD Acres per 1,000 Inh.":37.8,
+    "City Population":1308619
+  },
+  {
+    "City":"San Francisco",
+    "Total CPAD Acreage":5767,
+    "CPAD Acres per 1,000 Inh.":7.1,
+    "City Population":807755
+  },
+  {
+    "City":"San Jose",
+    "Total CPAD Acreage":19639,
+    "CPAD Acres per 1,000 Inh.":20.6,
+    "City Population":954379
+  },
+  {
+    "City":"Santa Ana",
+    "Total CPAD Acreage":1823,
+    "CPAD Acres per 1,000 Inh.":5.6,
+    "City Population":326608
+  },
+  {
+    "City":"Santa Clara",
+    "Total CPAD Acreage":333,
+    "CPAD Acres per 1,000 Inh.":2.9,
+    "City Population":116301
+  },
+  {
+    "City":"Santa Clarita",
+    "Total CPAD Acreage":3975,
+    "CPAD Acres per 1,000 Inh.":22.6,
+    "City Population":175922
+  },
+  {
+    "City":"Santa Rosa",
+    "Total CPAD Acreage":2901,
+    "CPAD Acres per 1,000 Inh.":17.3,
+    "City Population":167207
+  },
+  {
+    "City":"Simi Valley",
+    "Total CPAD Acreage":3284,
+    "CPAD Acres per 1,000 Inh.":26.5,
+    "City Population":123942
+  },
+  {
+    "City":"Stockton",
+    "Total CPAD Acreage":1135,
+    "CPAD Acres per 1,000 Inh.":3.9,
+    "City Population":292262
+  },
+  {
+    "City":"Sunnyvale",
+    "Total CPAD Acreage":2058,
+    "CPAD Acres per 1,000 Inh.":14.6,
+    "City Population":141123
+  },
+  {
+    "City":"Thousand Oaks",
+    "Total CPAD Acreage":12985,
+    "CPAD Acres per 1,000 Inh.":102.6,
+    "City Population":126570
+  },
+  {
+    "City":"Torrance",
+    "Total CPAD Acreage":420,
+    "CPAD Acres per 1,000 Inh.":2.9,
+    "City Population":145443
+  },
+  {
+    "City":"Vallejo",
+    "Total CPAD Acreage":6584,
+    "CPAD Acres per 1,000 Inh.":56.6,
+    "City Population":116417
+  },
+  {
+    "City":"Visalia",
+    "Total CPAD Acreage":741,
+    "CPAD Acres per 1,000 Inh.":6.0,
+    "City Population":123905
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "County":"Alameda",
+    "Total CPAD Acreage":476565,
+    "CPAD Acres per 1,000 Inh.":315,
+    "County Population":1515136
+  },
+  {
+    "County":"Alpine",
+    "Total CPAD Acreage":474266,
+    "CPAD Acres per 1,000 Inh.":396212,
+    "County Population":1197
+  },
+  {
+    "County":"Amador",
+    "Total CPAD Acreage":387827,
+    "CPAD Acres per 1,000 Inh.":10270,
+    "County Population":37764
+  },
+  {
+    "County":"Butte",
+    "Total CPAD Acreage":1073263,
+    "CPAD Acres per 1,000 Inh.":4876,
+    "County Population":220101
+  },
+  {
+    "County":"Calaveras",
+    "Total CPAD Acreage":662840,
+    "CPAD Acres per 1,000 Inh.":14566,
+    "County Population":45507
+  },
+  {
+    "County":"Colusa",
+    "Total CPAD Acreage":740383,
+    "CPAD Acres per 1,000 Inh.":34713,
+    "County Population":21329
+  },
+  {
+    "County":"Contra Costa",
+    "Total CPAD Acreage":481394,
+    "CPAD Acres per 1,000 Inh.":458,
+    "County Population":1052047
+  },
+  {
+    "County":"Del Norte",
+    "Total CPAD Acreage":648861,
+    "CPAD Acres per 1,000 Inh.":22770,
+    "County Population":28496
+  },
+  {
+    "County":"El Dorado",
+    "Total CPAD Acreage":1144947,
+    "CPAD Acres per 1,000 Inh.":6345,
+    "County Population":180441
+  },
+  {
+    "County":"Fresno",
+    "Total CPAD Acreage":3850607,
+    "CPAD Acres per 1,000 Inh.":4138,
+    "County Population":930517
+  },
+  {
+    "County":"Glenn",
+    "Total CPAD Acreage":849132,
+    "CPAD Acres per 1,000 Inh.":30242,
+    "County Population":28078
+  },
+  {
+    "County":"Humboldt",
+    "Total CPAD Acreage":2293951,
+    "CPAD Acres per 1,000 Inh.":17079,
+    "County Population":134317
+  },
+  {
+    "County":"Imperial",
+    "Total CPAD Acreage":2868458,
+    "CPAD Acres per 1,000 Inh.":16534,
+    "County Population":173487
+  },
+  {
+    "County":"Inyo",
+    "Total CPAD Acreage":6546558,
+    "CPAD Acres per 1,000 Inh.":354366,
+    "County Population":18474
+  },
+  {
+    "County":"Kern",
+    "Total CPAD Acreage":5221435,
+    "CPAD Acres per 1,000 Inh.":6222,
+    "County Population":839153
+  },
+  {
+    "County":"Kings",
+    "Total CPAD Acreage":890800,
+    "CPAD Acres per 1,000 Inh.":5861,
+    "County Population":151982
+  },
+  {
+    "County":"Lake",
+    "Total CPAD Acreage":850980,
+    "CPAD Acres per 1,000 Inh.":13222,
+    "County Population":64360
+  },
+  {
+    "County":"Lassen",
+    "Total CPAD Acreage":3021450,
+    "CPAD Acres per 1,000 Inh.":87255,
+    "County Population":34628
+  },
+  {
+    "County":"Los Angeles",
+    "Total CPAD Acreage":2611372,
+    "CPAD Acres per 1,000 Inh.":265,
+    "County Population":9840024
+  },
+  {
+    "County":"Madera",
+    "Total CPAD Acreage":1377575,
+    "CPAD Acres per 1,000 Inh.":9146,
+    "County Population":150615
+  },
+  {
+    "County":"Marin",
+    "Total CPAD Acreage":336285,
+    "CPAD Acres per 1,000 Inh.":1330,
+    "County Population":252759
+  },
+  {
+    "County":"Mariposa",
+    "Total CPAD Acreage":935607,
+    "CPAD Acres per 1,000 Inh.":51427,
+    "County Population":18193
+  },
+  {
+    "County":"Mendocino",
+    "Total CPAD Acreage":2247878,
+    "CPAD Acres per 1,000 Inh.":25667,
+    "County Population":87577
+  },
+  {
+    "County":"Merced",
+    "Total CPAD Acreage":1261432,
+    "CPAD Acres per 1,000 Inh.":4920,
+    "County Population":256398
+  },
+  {
+    "County":"Modoc",
+    "Total CPAD Acreage":2689712,
+    "CPAD Acres per 1,000 Inh.":281793,
+    "County Population":9545
+  },
+  {
+    "County":"Mono",
+    "Total CPAD Acreage":2003703,
+    "CPAD Acres per 1,000 Inh.":141295,
+    "County Population":14181
+  },
+  {
+    "County":"Monterey",
+    "Total CPAD Acreage":2121212,
+    "CPAD Acres per 1,000 Inh.":5097,
+    "County Population":416199
+  },
+  {
+    "County":"Napa",
+    "Total CPAD Acreage":505857,
+    "CPAD Acres per 1,000 Inh.":3702,
+    "County Population":136644
+  },
+  {
+    "County":"Nevada",
+    "Total CPAD Acreage":623852,
+    "CPAD Acres per 1,000 Inh.":6332,
+    "County Population":98521
+  },
+  {
+    "County":"Orange",
+    "Total CPAD Acreage":508921,
+    "CPAD Acres per 1,000 Inh.":168,
+    "County Population":3021840
+  },
+  {
+    "County":"Placer",
+    "Total CPAD Acreage":960108,
+    "CPAD Acres per 1,000 Inh.":2743,
+    "County Population":350074
+  },
+  {
+    "County":"Plumas",
+    "Total CPAD Acreage":1672709,
+    "CPAD Acres per 1,000 Inh.":83946,
+    "County Population":19926
+  },
+  {
+    "County":"Riverside",
+    "Total CPAD Acreage":4673122,
+    "CPAD Acres per 1,000 Inh.":2131,
+    "County Population":2192982
+  },
+  {
+    "County":"Sacramento",
+    "Total CPAD Acreage":636078,
+    "CPAD Acres per 1,000 Inh.":447,
+    "County Population":1422348
+  },
+  {
+    "County":"San Benito",
+    "Total CPAD Acreage":889408,
+    "CPAD Acres per 1,000 Inh.":16035,
+    "County Population":55467
+  },
+  {
+    "County":"San Bernardino",
+    "Total CPAD Acreage":12867927,
+    "CPAD Acres per 1,000 Inh.":6305,
+    "County Population":2041029
+  },
+  {
+    "County":"San Diego",
+    "Total CPAD Acreage":2712151,
+    "CPAD Acres per 1,000 Inh.":875,
+    "County Population":3100500
+  },
+  {
+    "County":"San Francisco",
+    "Total CPAD Acreage":30238,
+    "CPAD Acres per 1,000 Inh.":37,
+    "County Population":807755
+  },
+  {
+    "County":"San Joaquin",
+    "Total CPAD Acreage":912595,
+    "CPAD Acres per 1,000 Inh.":1328,
+    "County Population":687036
+  },
+  {
+    "County":"San Luis Obispo",
+    "Total CPAD Acreage":2124267,
+    "CPAD Acres per 1,000 Inh.":7864,
+    "County Population":270121
+  },
+  {
+    "County":"San Mateo",
+    "Total CPAD Acreage":290479,
+    "CPAD Acres per 1,000 Inh.":403,
+    "County Population":721183
+  },
+  {
+    "County":"Santa Barbara",
+    "Total CPAD Acreage":1760915,
+    "CPAD Acres per 1,000 Inh.":4157,
+    "County Population":423594
+  },
+  {
+    "County":"Santa Clara",
+    "Total CPAD Acreage":831659,
+    "CPAD Acres per 1,000 Inh.":465,
+    "County Population":1788393
+  },
+  {
+    "County":"Santa Cruz",
+    "Total CPAD Acreage":285713,
+    "CPAD Acres per 1,000 Inh.":1089,
+    "County Population":262340
+  },
+  {
+    "County":"Shasta",
+    "Total CPAD Acreage":2465233,
+    "CPAD Acres per 1,000 Inh.":13874,
+    "County Population":177693
+  },
+  {
+    "County":"Sierra",
+    "Total CPAD Acreage":615316,
+    "CPAD Acres per 1,000 Inh.":194536,
+    "County Population":3163
+  },
+  {
+    "County":"Siskiyou",
+    "Total CPAD Acreage":4062266,
+    "CPAD Acres per 1,000 Inh.":90933,
+    "County Population":44673
+  },
+  {
+    "County":"Solano",
+    "Total CPAD Acreage":544111,
+    "CPAD Acres per 1,000 Inh.":1314,
+    "County Population":414209
+  },
+  {
+    "County":"Sonoma",
+    "Total CPAD Acreage":1016737,
+    "CPAD Acres per 1,000 Inh.":2103,
+    "County Population":483456
+  },
+  {
+    "County":"Stanislaus",
+    "Total CPAD Acreage":970173,
+    "CPAD Acres per 1,000 Inh.":1883,
+    "County Population":515115
+  },
+  {
+    "County":"Sutter",
+    "Total CPAD Acreage":389436,
+    "CPAD Acres per 1,000 Inh.":4116,
+    "County Population":94615
+  },
+  {
+    "County":"Tehama",
+    "Total CPAD Acreage":1892926,
+    "CPAD Acres per 1,000 Inh.":29951,
+    "County Population":63200
+  },
+  {
+    "County":"Trinity",
+    "Total CPAD Acreage":2052766,
+    "CPAD Acres per 1,000 Inh.":149914,
+    "County Population":13693
+  },
+  {
+    "County":"Tulare",
+    "Total CPAD Acreage":3099338,
+    "CPAD Acres per 1,000 Inh.":7014,
+    "County Population":441877
+  },
+  {
+    "County":"Tuolumne",
+    "Total CPAD Acreage":1457657,
+    "CPAD Acres per 1,000 Inh.":26404,
+    "County Population":55205
+  },
+  {
+    "County":"Ventura",
+    "Total CPAD Acreage":1189161,
+    "CPAD Acres per 1,000 Inh.":1445,
+    "County Population":822794
+  },
+  {
+    "County":"Yolo",
+    "Total CPAD Acreage":653450,
+    "CPAD Acres per 1,000 Inh.":3253,
+    "County Population":200873
+  },
+  {
+    "County":"Yuba",
+    "Total CPAD Acreage":411821,
+    "CPAD Acres per 1,000 Inh.":5700,
+    "County Population":72244
+  }
+]

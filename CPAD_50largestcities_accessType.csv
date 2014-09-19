@@ -1,0 +1,5 @@
+Access_type,Anaheim,Bakersfield,Chula Vista,Concord,Corona,East Los Angeles,Elk Grove,Escondido,Fontana,Fremont,Fresno,Fullerton,Garden Grove,Glendale,Hayward,Huntington Beach,Irvine,Lancaster,Long Beach,Los Angeles,Modesto,Moreno Valley,Oakland,Oceanside,Ontario,Orange,Oxnard,Palmdale,Pasadena,Pomona,Rancho Cucamonga,Riverside,Roseville,Sacramento,Salinas,San Bernardino,San Diego,San Francisco,San Jose,Santa Ana,Santa Clara,Santa Clarita,Santa Rosa,Simi Valley,Stockton,Sunnyvale,Thousand Oaks,Torrance,Vallejo,Visalia
+Open Access,57,40,90,100,100,100,94,99,100,88,77,98,100,99,54,98,47,100,100,92,97,70,89,85,100,49,77,10,100,100,100,91,79,92,95,93,97,98,57,100,100,100,43,100,100,37,90,89,25,100
+Restricted Access (with permit),1,59,6,0,0,0,6,0,0,12,13,2,0,0,42,1,32,0,0,2,3,30,11,7,0,0,0,0,0,0,0,9,0,8,0,0,1,0,36,0,0,0,11,0,0,63,5,0,75,0
+No Public Access,0,1,1,0,0,0,0,1,0,0,0,0,0,1,4,0,1,0,0,6,0,0,0,3,0,0,23,0,0,0,0,0,21,0,0,7,1,2,5,0,0,0,46,0,0,0,4,11,0,0
+Unknown Access,42,0,2,0,0,0,0,0,0,0,10,0,0,0,0,1,21,0,0,0,0,0,0,5,0,51,0,89,0,0,0,0,0,0,5,0,1,0,2,0,0,0,0,0,0,0,1,0,0,0

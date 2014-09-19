@@ -1,4 +1,4 @@
-var selectedCounty;
+var selectedCounty = "Los Angeles";
 
 function countyClass(name) {
   d3.select(".selectedCounty").classed("selectedCounty", false);
@@ -11,7 +11,7 @@ function countyClass(name) {
     .transition().duration(300);
 }
 
-d3.json("caFields11.json", function(err, ca) {
+d3.json("CPAD_counties2.json", function(err, ca) {
 
   var div = d3.select("body").append("div")
   .attr("class", "mapTooltip")
@@ -60,7 +60,6 @@ d3.json("caFields11.json", function(err, ca) {
       .attr("height", LegendH)
       .attr("x", 0)
       .attr("y", 420);
-      //.style("display", "none");
 
   var gradient = svg.append("svg:defs")
     .append("svg:linearGradient")
@@ -129,6 +128,7 @@ else if (document.getElementById("POP_NORMCounty").checked) {
             .attr("d",path)
             .classed("geoOverlay", true)
             .classed("McountyOverlay", true)
+            .classed("selectedCounty", function(d) {return selectedCounty === d.properties.name;})
             .on("mouseover", function(d) {
             div.transition().duration(300).style("opacity", 1);
             div.text(d.properties.name+" County")
@@ -141,7 +141,7 @@ else if (document.getElementById("POP_NORMCounty").checked) {
             updateCountyPie1(d.properties.name);
             updateCountyPie2(d.properties.name);
             updateCountyName(d.properties.name);
-            updateCountyTot(d3.format(",")(d.properties.ac_tot));
+            updateCountyTot(d3.format(",")(d.properties.ac_tot),d3.format(",")(d.properties.Tot_Pop));
             updateCountyInh(d3.format(",")(d.properties.POP_NORM));
           });
 

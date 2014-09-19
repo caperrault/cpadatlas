@@ -115,23 +115,16 @@
               <br>
               CPAD's 49 million acres of land are distributed in different ways for each of the state's 58 counties and 500 cities - some counties are almost completely CPAD lands while others have very little such land, and comparing to population provides another view.
             </p>
-            <div id="imageLegendContainer">
-              <p id="imageLegend">
-              <span style="font-size:12px"> <em>Click the maps and tables below to get facts and figures about CPAD areas as shown on this image</em> <span style="font-size:9px">&#x25b6 </span></span>
-              </p>
-            </div>
           </div>
           <div id="tutorial">
-            <img src="CPADAtlasIllustration350px.jpg">
+            <img src="ilikenightFlickr_MtDiabloOak.jpg" width="435px">
           </div>
 
           <h3>CPAD Data per County</h3>
 
-          <div id="countyChapter">
+          <hr>
 
-            <div class="content">
-              <p>Click any county.</p>
-            </div>
+          <div id="countyChapter">
 
             <form id="countyNav" class="switch switch-blue">
                 <input type="radio" class="countyDiv2" name="viewCountyTab" id="county1" checked>
@@ -172,7 +165,7 @@
 
                 <script>
 
-                d3.json("Counties_statsCorrected2.json", function(data) {
+                d3.json("Counties_statsCorrected4.json", function(data) {
 
                 var selectedTableHeader;
 
@@ -239,7 +232,8 @@
                     .attr("class", "tableHeader")
                     .attr("transform", function (d, i){
                       return "translate("+ i* fieldWidth + ",0)";
-                    });
+                    })
+                    .style("display", function (d, i) { if (i>=3) {return "none";}});
 
                   header.append("rect")
                     .attr("width", fieldWidth + 30)
@@ -274,13 +268,14 @@
                     .attr("transform", function (d, i){
                       return "translate(0," + (i) * (fieldHeight+1) + ")";
                     })
+                    .classed("selectedCounty", function(d) {return selectedCounty === d.County;})
                     .on("click", function(d) {
                                             selectedCounty = d.County;
                                             countyClass(d.County);
                                             updateCountyPie1(d.County);
                                             updateCountyPie2(d.County);
                                             updateCountyName(d.County);
-                                            updateCountyTot(d3.format(",")(d["Total CPAD Acreage"]));
+                                            updateCountyTot(d3.format(",")(d["Total CPAD Acreage"]),d3.format(",")(d["County Population"]));
                                             updateCountyInh(d3.format(",")(d["CPAD Acres per 1,000 Inh."]));
                                           });
 
@@ -417,11 +412,9 @@
 
       <h3>CPAD Data for Selected Cities</h3>
 
-      <div id="cityChapter">
+      <hr>
 
-        <div class="content">
-          <p>Click any of the 50 cities with the most CPAD acres, or most acres per person.</p>
-        </div>
+      <div id="cityChapter">
 
         <form id="cityNav" class="switch switch-blue">
             <input type="radio" class="cityDiv2" name="viewCityTab" id="city1" checked>
@@ -439,7 +432,7 @@
 
           <div>
             <form class="mapScale">
-              <label><input type="Radio" name="dataset" id="ac_totCity" class="radioCity" value="ac_tot"> Total CPAD Acreage</label>
+              <label><input type="Radio" name="dataset" id="ac_totCity" class="radioCity" value="ac_tot" checked> Total CPAD Acreage</label>
               <label><input type="Radio" name="dataset" id="POP_NORMCity" class="radioCity" value="POP_NORM"> CPAD Acres per Inhabitant</label>
             </form>
           </div>
@@ -462,7 +455,7 @@
 
             <script>
 
-            d3.json("Cities50_Cpad_pop_per1000.json", function(data) {
+            d3.json("LargestCities50_Cpad_withpop.json", function(data) {
 
             var selectedTableHeader;
 
@@ -489,7 +482,7 @@
                          .attr("width", 20)
                          .attr("height", 21)
                          .attr("font-weight", "bold")
-                         .text(function (d, i) {return d;});
+                         .text(function (d) {return d;});
 
             var width = 500,
                 height = 1000;
@@ -527,9 +520,10 @@
                 .enter()
                 .append("g")
                 .attr("class", "tableHeader")
-                .attr("transform", function (d, i){
+                .attr("transform", function (d, i) {
                   return "translate("+ i* fieldWidth + ",0)";
-                });
+                })
+                .style("display", function (d, i) { if (i>=3) {return "none";}});
 
               header.append("rect")
                 .attr("width", fieldWidth + 30)
@@ -539,18 +533,13 @@
                 .attr("x", fieldWidth/2 + 25)
                 .attr("y", fieldHeight/2)
                 .attr("dy", ".35em")
-                .text(function (d) { return d;})
-                .style("cursor", function (d, i) {
-                    if (i>=0) { return "s-resize";}
-                    else { return "default";}
-                  })
+                .text(function (d) {return d;})
+                .style("cursor", "s-resize")
                 .on("click", function (d, i) {
                   selectedTableHeader = i;
-                  if (i>=0) {
                   d3.select(".cityTableHeaderSelected").classed("cityTableHeaderSelected", false);
                   d3.select(this).classed("cityTableHeaderSelected", true);
                   return refreshTable(d);
-                  }
                 });
 
               // fill the table
@@ -561,6 +550,7 @@
               // create rows
               var rowsEnter = rows.enter().append("svg:g")
                 .attr("class", "Tcity")
+                .classed("selectedCity", function(d) {return selectedCity === d.City;})
                 .attr("transform", function (d, i){
                   return "translate(0," + (i) * (fieldHeight+1) + ")";
                 })
@@ -570,8 +560,8 @@
                                         updateCityPie1(d.City);
                                         updateCityPie2(d.City);
                                         updateCityName(d.City);
-                                        updateCityTot(d3.format(",")(d["Total CPAD Acreage"]));
                                         updateCityInh(d3.format(",")(d["CPAD Acres per 1,000 Inh."]));
+                                        updateCityTot(d3.format(",")(d["Total CPAD Acreage"]),d3.format(",")(d["City Population"]));
                                       });
 
               // select cells
