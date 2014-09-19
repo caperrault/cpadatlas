@@ -104,7 +104,7 @@ function setCountyValue(name) {
                 .attr("font-size", "32px");
 };
 
-function setTotValue(tot, totpop) {
+function setCountyTotValue(tot, totpop) {
 
   countyTotRect = countyTotSvg.append('rect')
                 .attr("width", 600)
@@ -145,7 +145,7 @@ function setTotValue(tot, totpop) {
               .attr("font-size", "12px");
 };
 
-function setInhValue(inh) {
+function setCountyInhValue(inh) {
 
   countyInhRect = countyInhSvg.append('rect')
                 .attr("width", 600)
@@ -171,10 +171,7 @@ function setInhValue(inh) {
                 .attr("font-size", "18px");
 
                 countyInh.append("countyInhSvg:tspan")
-                .text(function() {
-                  if(inh >= 2) { return " CPAD acres per 1,000 inhabitants";}
-                    else { return " CPAD acre per 1,000 inhabitants";}
-                })
+                .text(" CPAD acres per 1,000 inhabitants")
                 .attr("text-anchor", "left")
                 .attr("y","65%")
                 .attr("fill", "#444")
@@ -182,7 +179,7 @@ function setInhValue(inh) {
                 };
 
 updateCountyName = setCountyValue;
-updateCountyTot = setTotValue;
-updateCountyInh = setInhValue;
+updateCountyTot = setCountyTotValue;
+updateCountyInh = setCountyInhValue;
 
 });
