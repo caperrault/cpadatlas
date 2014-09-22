@@ -20,7 +20,7 @@ d3.csv("CPAD_50largestcities_agencyLevel.csv", function (dataset) {
                 .text("Sacramento")
                 .attr("fill", "#444")
                 .attr("font-weight", "bold")
-                .attr("font-size", "32px");
+                .attr("font-size", "28px");
 
   cityTot = cityTotSvg.append("cityTotSvg:text")
 
@@ -34,7 +34,7 @@ d3.csv("CPAD_50largestcities_agencyLevel.csv", function (dataset) {
               .attr("font-size", "18px");
 
               cityTot.append("cityTotSvg:tspan")
-              .text(" CPAD acres / Total Population: ")
+              .text(" CPAD acres / Population: ")
               .attr("text-anchor", "left")
               .attr("y","65%")
               .attr("fill", "#444")
@@ -102,7 +102,7 @@ function setCityValue(name) {
                 .text(name)
                 .attr("fill", "#444")
                 .attr("font-weight", "bold")
-                .attr("font-size", "32px");
+                .attr("font-size", "28px");
 };
 
 function setCityTotValue(tot, totpop) {
@@ -124,7 +124,7 @@ function setCityTotValue(tot, totpop) {
               .attr("font-size", "18px");
 
               cityTot.append("cityTotSvg:tspan")
-              .text(" CPAD acres / Total Population: ")
+              .text(" CPAD acres / Population: ")
               .attr("text-anchor", "left")
               .attr("y","65%")
               .attr("fill", "#444")

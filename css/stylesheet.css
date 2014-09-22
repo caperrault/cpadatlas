@@ -32,6 +32,10 @@ h3 {
   clear: both;
 }
 
+#h3County {
+  padding-top: 0;
+}
+
 .content {
   width: 500px;
   padding-top: 10px;
@@ -461,4 +465,12 @@ input[name="dataset"] {
     -moz-appearance: checkbox;
     -ms-appearance: checkbox;
     -o-appearance: checkbox;
+}
+
+#cityDataNote {
+  font-size: 10px;
+  clear: both;
+  width: 1000px;
+  margin-left: 0px;
+  margin-top: -20px;
 }

@@ -16,10 +16,10 @@ d3.csv("Agency_lev_allcounties_perc5.csv", function (dataset) {
                           .attr("text-anchor", "left")
                           .attr("x","0%")
                           .attr("y","60%")
-                          .text("Los Angeles County:")
+                          .text("Los Angeles County")
                           .attr("fill", "#444")
                           .attr("font-weight", "bold")
-                          .attr("font-size", "32px");
+                          .attr("font-size", "28px");
 
             countyTot = countyTotSvg.append("countyTotSvg:text")
 
@@ -33,7 +33,7 @@ d3.csv("Agency_lev_allcounties_perc5.csv", function (dataset) {
                         .attr("font-size", "18px");
 
                         countyTot.append("countyTotSvg:tspan")
-                        .text(" CPAD acres / Total Population: ")
+                        .text(" CPAD acres / Population: ")
                         .attr("text-anchor", "left")
                         .attr("y","65%")
                         .attr("fill", "#444")
@@ -98,10 +98,10 @@ function setCountyValue(name) {
                 .attr("text-anchor", "left")
                 .attr("x","0%")
                 .attr("y","60%")
-                .text(name+" County:")
+                .text(name+" County")
                 .attr("fill", "#444")
                 .attr("font-weight", "bold")
-                .attr("font-size", "32px");
+                .attr("font-size", "28px");
 };
 
 function setCountyTotValue(tot, totpop) {
@@ -123,7 +123,7 @@ function setCountyTotValue(tot, totpop) {
               .attr("font-size", "18px");
 
               countyTot.append("countyTotSvg:tspan")
-              .text(" CPAD acres / Total Population: ")
+              .text(" CPAD acres / Population: ")
               .attr("text-anchor", "left")
               .attr("y","65%")
               .attr("fill", "#444")
