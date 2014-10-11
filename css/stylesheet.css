@@ -66,9 +66,10 @@ h3 {
 
 .McountyOverlay.selectedCounty {
   opacity: 1;
-  fill: #EF8B6C;
-  stroke-width: 0;
-  stroke: #FF7E53;
+  fill-opacity: 0;
+  stroke-width: 2;
+  stroke: #EF6C72;
+  stroke-opacity:0.9;
 }
 
 .Mcity {
@@ -79,7 +80,7 @@ stroke-width: .5px;
 .Mcity.selectedCity {
     fill-opacity: 1;
     stroke-width: 3px;
-    stroke: #FF7E53;
+    stroke: #EF6C72;
 }
 
 .previousCountyName {
@@ -259,7 +260,7 @@ g .cityTableHeaderSelected {
     font-weight: bold;
     opacity: 1;
     font-size: 14px;
-    fill: #FF7E53;
+    fill: #EF6C72;
 }
 
 #countyTabs {
@@ -324,7 +325,7 @@ border-left: 1px dotted lightGray;
     font-weight: bold;
     opacity: 1;
     font-size: 14px;
-    fill: #FF7E53;
+    fill: #EF6C72;
 }
 
 #cityTable{
@@ -474,3 +475,13 @@ input[name="dataset"] {
   margin-left: 0px;
   margin-top: -20px;
 }
+
+.q0-9 { fill:rgb(247,251,255); }
+.q1-9 { fill:rgb(222,235,247); }
+.q2-9 { fill:rgb(198,219,239); }
+.q3-9 { fill:rgb(158,202,225); }
+.q4-9 { fill:rgb(107,174,214); }
+.q5-9 { fill:rgb(66,146,198); }
+.q6-9 { fill:rgb(33,113,181); }
+.q7-9 { fill:rgb(8,81,156); }
+.q8-9 { fill:rgb(8,48,107); }

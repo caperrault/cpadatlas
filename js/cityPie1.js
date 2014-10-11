@@ -9,7 +9,7 @@ d3.csv("CPAD_50largestcities_accessType.csv", function (dataset) {
           .style("opacity", 0);
 
           var color = d3.scale.ordinal()
-                              .range(["#74c476", "#a1d99b", "#F05522", "#E0E0E0"])
+                              .range(["#74c476", "#a1d99b", "#FF6D37", "#E0E0E0"])
                               .domain(d3.range(0,4));
 
           var svg = d3.select("#cityPie1").append("svg")

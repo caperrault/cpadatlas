@@ -56,13 +56,13 @@ d3.csv("Agency_lev_allcounties_perc5.csv", function (dataset) {
 
               countyInh = countyInhSvg.append("countyInhSvg:text")
 
-                          countyInh.append("countyInhSvg:tspan")
+                        /*  countyInh.append("countyInhSvg:tspan")
                           .text("which amounts to ")
                           .attr("text-anchor", "left")
                           .attr("x", "0%")
                           .attr("y","65%")
                           .attr("fill", "#444")
-                          .attr("font-size", "12px");
+                          .attr("font-size", "12px");*/
 
                           countyInh.append("countyInhSvg:tspan")
                           .text(265)
@@ -154,13 +154,13 @@ function setCountyInhValue(inh) {
 
     countyInh = countyInhSvg.append("countyInhSvg:text")
 
-                countyInh.append("countyInhSvg:tspan")
+                /*countyInh.append("countyInhSvg:tspan")
                 .text("which amounts to ")
                 .attr("text-anchor", "left")
                 .attr("x", "0%")
                 .attr("y","65%")
                 .attr("fill", "#444")
-                .attr("font-size", "12px");
+                .attr("font-size", "12px");*/
 
                 countyInh.append("countyInhSvg:tspan")
                 .text(inh)

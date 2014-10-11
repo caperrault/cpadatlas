@@ -19,8 +19,10 @@ d3.csv("Access_type_allcounties_perc.csv", function (dataset) {
 
           /*Alternative color scale with green*/
           var color = d3.scale.ordinal()
-                              .range(["#74c476", "#a1d99b", "#F05522", "#E0E0E0"])
+                            //  .range(["#74c476", "#a1d99b", "#F05522", "#E0E0E0"])
+                              .range(["#74c476", "#a1d99b", "#FF6D37", "#E0E0E0"])
                               .domain(d3.range(0,4));
+                              //["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#ffffbf","#d9ef8b","#a6d96a","#66bd63","#1a9850","#006837"]
 
           var svg = d3.select("#countyPie1").append("svg")
                       .attr("width", width)

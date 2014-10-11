@@ -57,13 +57,13 @@ d3.csv("CPAD_50largestcities_agencyLevel.csv", function (dataset) {
 
   cityInh = cityInhSvg.append("cityInhSvg:text")
 
-                cityInh.append("cityInhSvg:tspan")
+              /*  cityInh.append("cityInhSvg:tspan")
                 .text("which amounts to ")
                 .attr("text-anchor", "left")
                 .attr("x", "0%")
                 .attr("y","65%")
                 .attr("fill", "#444")
-                .attr("font-size", "12px");
+                .attr("font-size", "12px");*/
 
                 cityInh.append("cityInhSvg:tspan")
                 .text(12.5)
@@ -155,13 +155,13 @@ function setCityInhValue(inh) {
 
   cityInh = cityInhSvg.append("cityInhSvg:text")
 
-                cityInh.append("cityInhSvg:tspan")
+                /*cityInh.append("cityInhSvg:tspan")
                 .text("which amounts to ")
                 .attr("text-anchor", "left")
                 .attr("x", "0%")
                 .attr("y","65%")
                 .attr("fill", "#444")
-                .attr("font-size", "12px");
+                .attr("font-size", "12px");*/
 
                 cityInh.append("cityInhSvg:tspan")
                 .text(inh)
