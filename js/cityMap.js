@@ -114,7 +114,7 @@ d3.json("CA_perlargestcities_topo.json", function(err, ca) {
 
   legendPop.append("text")
       .attr("y", function(d) { return - 2.06 * radius(d); })
-      .attr("dy", "1.3em")
+      .attr("dy", "1.5em")
       .style("text-anchor", "middle")
       .text(function (d) {return d3.format(".1s")(d/1000);});
 
