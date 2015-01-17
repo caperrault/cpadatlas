@@ -2,6 +2,7 @@
 by Charles-Antoine Perrault, January 2015
 
 http://www.calands.org/data/snapshot
+https://github.com/caperrault/cpadatlas/tree/gh-pages
 
 
 PROJECT STRUCTURE
